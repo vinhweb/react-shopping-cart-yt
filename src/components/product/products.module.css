@@ -1,0 +1,30 @@
+.list{
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 14px;
+}
+.item{
+	padding: 20px 14px;
+	border-radius: 8px;
+	background: bisque;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+.item h4{
+	padding: 0;
+	margin: 0;
+}
+.item p{
+	padding: 0;
+	margin: 0;
+	font-size: 2rem;
+}
+.item button{
+	border: none;
+	border-radius: 6px;
+	padding: 4px 10px;
+	background: darkorange;
+	color: white;
+	cursor: pointer;
+}
