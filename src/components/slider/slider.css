@@ -1,0 +1,58 @@
+.wrapper{
+	max-width: 1100px;
+	width: 100%;
+	position: relative;
+}
+.caret{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 1.25em;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+	z-index: 10;
+	text-align: center;
+}
+.left{
+	left: -22px
+}
+.right{
+	right: -22px
+}
+
+.carousel{
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: calc(100%/3 - 12px);
+	overflow-x: auto;
+	gap: 16px;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+}
+.carousel.no-transition{
+	scroll-behavior: auto;
+}
+.carousel::-webkit-scrollbar{
+	display: none;
+}
+.carousel .card{
+	scroll-snap-align: start;
+	overflow: hidden;
+}
+.carousel .card img{
+	pointer-events: none;
+}
+
+.carousel.dragging {
+	scroll-snap-type: none;
+	scroll-behavior: auto;
+}
+.carousel.dragging .card {
+	cursor: grab;
+}
