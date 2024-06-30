@@ -1,12 +1,10 @@
-import Slider from "../components/slider/slider";
-import Slideshow from "../components/slider/slideshow";
+import ChartPageContent from "../components/chart/ChartPageContent";
 
 export default function Home(){
 	return (
 		<main>
 			<h1>Trang chủ</h1>
-			{/*<Slider/>*/}
-			<Slideshow/>
+			<ChartPageContent/>
 		</main>
 	)
 }
