@@ -1,10 +1,10 @@
-import ChartPageContent from "../components/chart/ChartPageContent";
+import HighChartPage from "../components/highchart/highchart-page";
 
 export default function Home(){
 	return (
 		<main>
 			<h1>Trang chủ</h1>
-			<ChartPageContent/>
+			<HighChartPage/>
 		</main>
 	)
 }
